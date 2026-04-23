@@ -1,7 +1,7 @@
 //code wasnt working kept taking me back to node file when i ran main.js
 // so combined all classes in one file my 
 // original notes for this code is in other files
-class Node {
+export default class Node {
     constructor(value = null, nextNode = null) {
         //creates our values in our contructor for our nodes
         this.value = value;
@@ -9,7 +9,7 @@ class Node {
         this.nextNode = nextNode;
     }
 } //our LinkedList class with the call to our constructor fron Node class
-class LinkedList {
+export class LinkedList {
     constructor() {
         //we make our head the first node in the list
         this.head = null;
@@ -43,16 +43,31 @@ toString() {
         return result + "null";
     }
 }
-
+function runDemo() {
 // Execution logic
 const list = new LinkedList();
 console.log("Program started...");
 list.append("dog");
 list.append("cat");
 list.append("parrot");
-
 list.append("hamster");
 list.append("snake");
 list.append("turtle");
 //print our list should show arrows with our pets
 console.log(list.toString());
+    }
+// running in Node (cmd)
+if (typeof window === "undefined") {
+  console.log("Program started...");
+  console.log(runDemo());
+}
+
+// if running in browser (GitHub)
+if (typeof window !== "undefined") {
+  document.getElementById("output").textContent = runDemo();
+}
+
+
+
+
+
