@@ -1,6 +1,6 @@
 //goal is to manage the list in here creating a class
-/*import Node from "./node.js";
-class LinkedList {
+import Node from "./node.js";
+export class LinkedList {
     constructor()//call to our constructor
     {
         this.head=null;
@@ -33,4 +33,4 @@ class LinkedList {
     return result;
 }
 }
-module.exports = LinkedList;*/
+//module.exports = LinkedList;
