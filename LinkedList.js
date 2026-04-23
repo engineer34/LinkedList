@@ -1,4 +1,4 @@
-//goal is to manage the list in here creating a class
+/*goal is to manage the list in here creating a class
 import Node from "./node.js";
 export class LinkedList {
     constructor()//call to our constructor
@@ -33,4 +33,4 @@ export class LinkedList {
     return result;
 }
 }
-//module.exports = LinkedList;
+*/
