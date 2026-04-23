@@ -46,7 +46,7 @@ toString() {
 function runDemo() {
 // Execution logic
 const list = new LinkedList();
-console.log("Program started...");
+
 list.append("dog");
 list.append("cat");
 list.append("parrot");
@@ -54,7 +54,7 @@ list.append("hamster");
 list.append("snake");
 list.append("turtle");
 //print our list should show arrows with our pets
-console.log(list.toString());
+return list.toString();
     }
 // running in Node (cmd)
 if (typeof window === "undefined") {
